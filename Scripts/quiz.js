@@ -58,12 +58,10 @@ function mostrarResultado() {
             `).join('')}
         </div>
         
-        <div class="btn-reiniciar-container">
-            <button class="btn-reiniciar" onclick="reiniciarQuiz()">↻ Fazer novamente</button>
-        </div>
+        <button onclick="reiniciarQuiz()">Fazer novamente</button>
     </div>`;
-    const quizContainer = document.querySelector('.quiz-container');
-    quizContainer.insertAdjacentHTML('beforeend', resultadoHTML);
+    
+    document.querySelector('main').insertAdjacentHTML('beforeend', resultadoHTML);
 }
 
 function analisarRespostas() {
@@ -149,21 +147,12 @@ function analisarRespostas() {
 // reiniciar o quiz NESSE CARAI, NÃO SE PERDEE!!!!!
 function reiniciarQuiz() {
     perguntaAtual = 1;
-    respostas = {};
-
-    // Esconde todas as seções, exceto a primeira
     document.querySelectorAll('section').forEach((sec, index) => {
         sec.style.display = index === 0 ? 'block' : 'none';
     });
-
-    // Remove o elemento de resultado, se existir
-    const resultado = document.querySelector('.resultado');
-    if (resultado) {
-        resultado.remove();
-    }
-
-    // Opcional: Reiniciar outros elementos do quiz, se necessário
+    document.querySelector('.resultado').remove();
 }
+
 // Inicialização
 document.addEventListener('DOMContentLoaded', function() {
     // Esconde tudo nessa bosta
