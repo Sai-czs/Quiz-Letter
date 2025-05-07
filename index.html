@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+    <body>
+
+        <div class="welcome-screen">
+            <div class="welcome-content">
+                <h1>Bem-vindo ao <span>Quiz-Letter</span></h1>
+                <div class="welcome-subtitle">
+                    <p>Descubra quais filmes combinam com seu momento</p>
+                    <button class="start-btn">Começar</button>
+                </div>
+            </div>
+        </div>
+
+    <main class="quiz-container" style="display:none;">
+         <section>
+            <h2>Como você leva sua vida?</h2>
+                <form>
+                    <input type = "radio" value="Tranquilo" id="p1a" name="pergunta1">
+                    <label for= "p1a">Tranquilo, estou bem.</label><br>
+
+                    <input type = "radio" value="Desanimado" id="p1b" name="pergunta1">
+                    <label for= "p1b">Desanimado, a rotina há de ser monótona.</label><br>
+
+                    <input type = "radio" value="Sofrido" id="p1c" name="pergunta1">
+                    <label for= "p1c">Sofrido, sinto falta de um passado.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(1)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Como você se sente sobre seus dias?</h2>
+                <form>
+                    <input type = "radio" value="Bem" id="p2a" name="pergunta2">
+                    <label for= "p2a">Bem, geralmente são bons.</label><br>
+
+                    <input type = "radio" value="Arrastado" id="p2b" name="pergunta2">
+                    <label for= "p2b">Arrastado, há dias difíceis mas vou levando.</label><br>
+
+                    <input type = "radio" value="Mal" id="p2c" name="pergunta2">
+                    <label for= "p2c">Mal, constantemente me pergunto um propósito.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(2)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Pensa muito sobre o passado?</h2>
+                <form>
+                    <input type = "radio" value="Não" id="p3a" name="pergunta3">
+                    <label for= "p3a">Não penso muito sobre.</label><br>
+
+                    <input type = "radio" value="As vezes" id="p3b" name="pergunta3">
+                    <label for= "p3b">As vezes, mas nada que me prenda muito.</label><br>
+
+                    <input type = "radio" value="Constantemente" id="p3c" name="pergunta3">
+                    <label for= "p3c">Constantemente, penso no que poderia ter feito ou falado de diferente.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(3)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Se sente sozinho?</h2>
+                <form>
+                    <input type = "radio" value="Não" id="p4a" name="pergunta4">
+                    <label for= "p4a">Não, tenho amigos e familiares próximos.</label><br>
+
+                    <input type = "radio" value="As vezes" id="p4b" name="pergunta4">
+                    <label for= "p4b">As vezes, mas só quando realmente estou sem ninguém por perto.</label><br>
+
+                    <input type = "radio" value="Sim" id="p4c" name="pergunta4">
+                    <label for= "p4c">Sim, mesmo com alguém perto é inevitável o sentimento de solidão.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(4)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Como você lida com perdas?</h2>
+                <form>
+                    <input type = "radio" value="Bem" id="p5a" name="pergunta5">
+                    <label for= "p5a">Bem, acontece e bola pra frente.</label><br>
+
+                    <input type = "radio" value="Nada demais" id="p5b" name="pergunta5">
+                    <label for= "p5b">As vezes machuca, mas supero com o tempo.</label><br>
+
+                    <input type = "radio" value="Difícil" id="p5c" name="pergunta5">
+                    <label for= "p5c">Difícil superar, não consigo só deixar ir.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(5)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Como você se sente sobre seu potencial?</h2>
+                <form>
+                    <input type = "radio" value="Orgulhoso" id="p6a" name="pergunta6">
+                    <label for= "p6a">Orgulhoso, sinto que posso alcançar grandes coisas.</label><br>
+
+                    <input type = "radio" value="Dividido" id="p6b" name="pergunta6">
+                    <label for= "p6b">Reconheço meu esforço, mas vejo que tenho que melhorar.</label><br>
+
+                    <input type = "radio" value="Frustrado" id="p6c" name="pergunta6">
+                    <label for= "p6c">Frustrado, sinto que nunca vou chegar ao ponto que realmente desejo.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(6)">Próxima pergunta</button>
+         </section>
+         <section>
+            <h2>Como se sente em relação a você mesmo?</h2>
+                <form>
+                    <input type = "radio" value="Muito bem" id="p7a" name="pergunta7">
+                    <label for= "p7a">Muito bem comigo mesmo.</label><br>
+
+                    <input type = "radio" value="Dividido" id="p7b" name="pergunta7">
+                    <label for= "p7b">Acho que bem, não penso muito sobre.</label><br>
+
+                    <input type = "radio" value="Decepcionado" id="p7c" name="pergunta7">
+                    <label for= "p7c">Decepcionado, sinto que falho constantemente.</label><br>
+                </form>
+                <button class="next-btn" onclick="proximaPergunta(7)">Ver resultados</button>
+         </section>
+
+         </main>
+
+         <script src="scripts/quiz.js"></script>
+    </body>
+</html>
