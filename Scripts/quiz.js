@@ -94,7 +94,7 @@ function analisarRespostas() {
                 },
                 { 
                     nome: "La La Land", 
-                    descricao: "Se for pra se amaldiçoar com memórais, com certeza esse filme é para você.",
+                    descricao: "Se for pra se amaldiçoar com memórias, com certeza esse filme é para você.",
                     imagem: "https://upload.wikimedia.org/wikipedia/pt/c/c0/La_La_Land_%28filme%29.png"
                 }
             ]
